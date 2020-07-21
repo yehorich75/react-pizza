@@ -1,5 +1,4 @@
 import React from 'react';
-import logoSvg from './assets/img/pizza-logo.svg';
 
 import Header from './Header';
 import Button from './Button';
@@ -7,7 +6,8 @@ import Button from './Button';
 function App() {
   return (
     <div className='wrapper'>
-      <Button />
+      <Button outline>Button</Button>
+      <Button>Text</Button>
       <Header />
       <div className='content'>
         <div className='container'>
