@@ -4,10 +4,15 @@ import Header from './Header';
 import Button from './Button';
 
 function App() {
+  const clickPoKnopke = () => {
+    alert('Hello');
+  };
   return (
     <div className='wrapper'>
       <Button outline>Button</Button>
-      <Button>Text</Button>
+      <Button onClick={clickPoKnopke} test>
+        123
+      </Button>
       <Header />
       <div className='content'>
         <div className='container'>
