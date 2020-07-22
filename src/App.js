@@ -4,13 +4,14 @@ import Header from './Header';
 import Button from './Button';
 
 function App() {
-  const clickPoKnopke = () => {
+  const clickToButton = () => {
     alert('Hello');
   };
+
   return (
     <div className='wrapper'>
       <Button outline>Button</Button>
-      <Button onClick={clickPoKnopke} test>
+      <Button onClick={() => alert(555)} test>
         123
       </Button>
       <Header />
