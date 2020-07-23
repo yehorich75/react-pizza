@@ -1,33 +1,25 @@
 import React from 'react';
 
-import Header from './Header';
-import Button from './Button';
+import {Header, Categories} from './components';
 
 function App() {
-  const clickToButton = () => {
-    alert('Hello');
-  };
+  // const clickToButton = () => {
+  //   alert('Hello');
+  // };
 
   return (
     <div className='wrapper'>
-      <Button outline>Button</Button>
+      {/* <Button outline>Button</Button>
       <Button onClick={() => alert(555)} test>
         123
-      </Button>
+      </Button> */}
       <Header />
       <div className='content'>
         <div className='container'>
           <div className='content__top'>
-            <div className='categories'>
-              <ul>
-                <li className='active'>Все</li>
-                <li>Мясные</li>
-                <li>Вегетарианская</li>
-                <li>Гриль</li>
-                <li>Острые</li>
-                <li>Закрытые</li>
-              </ul>
-            </div>
+            <Categories items={[
+              'Мясные', 'Вегетарианская', 'Гриль', 'Острые', 'Закрытые'
+            ]} />
             <div className='sort'>
               <div className='sort__label'>
                 <svg
